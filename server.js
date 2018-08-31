@@ -4,7 +4,7 @@ const puppeteer = require('puppeteer');
 //const twilio = require('twilio');
 const fs = require('fs');
 const nodemailer = require('nodemailer');
-const converter = require('json-2-csv');
+//const converter = require('json-2-csv');
 
 //const { TWILIOACCOUNTSID, TWILIOAUTHTOKEN, TWILIOTO, TWILIOFROM } = process.env;
 //const twilioClient = new twilio(TWILIOACCOUNTSID, TWILIOAUTHTOKEN);

@@ -6,8 +6,8 @@ const fs = require('fs');
 const nodemailer = require('nodemailer');
 const converter = require('json-2-csv');
 
-const { TWILIOACCOUNTSID, TWILIOAUTHTOKEN, TWILIOTO, TWILIOFROM } = process.env;
-const twilioClient = new twilio(TWILIOACCOUNTSID, TWILIOAUTHTOKEN);
+//const { TWILIOACCOUNTSID, TWILIOAUTHTOKEN, TWILIOTO, TWILIOFROM } = process.env;
+//const twilioClient = new twilio(TWILIOACCOUNTSID, TWILIOAUTHTOKEN);
 
 let {google} = require('googleapis');
 let OAuth2 = google.auth.OAuth2;
@@ -124,15 +124,15 @@ console.log(tapData.toString());
 
 }
 
- const sendTextMessage = (status) => {
-    const msg = {
-      to: TWILIOTO,
-      from: TWILIOFROM,
-      body: `Gnarly Tap List: '${status}'`,
-   };
- 
-   twilioClient.messages.create(msg).catch(console.error);
-  };
+ //const sendTextMessage = (status) => {
+ //   const msg = {
+ //     to: TWILIOTO,
+ //     from: TWILIOFROM,
+ //     body: `Gnarly Tap List: '${status}'`,
+ //  };
+ //
+ //  twilioClient.messages.create(msg).catch(console.error);
+ // };
 
 function sendTheEmail(fileName)
 {

@@ -1,7 +1,7 @@
 require('dotenv').config()
 
 const puppeteer = require('puppeteer');
-const twilio = require('twilio');
+//const twilio = require('twilio');
 const fs = require('fs');
 const nodemailer = require('nodemailer');
 const converter = require('json-2-csv');
